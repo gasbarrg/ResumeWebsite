@@ -121,6 +121,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 ASSETS_ROOT = 'static/'
 
+STATIC_ROOT = "/var/resumeWebsite/static/"
+
 # ASSETS_ROOT = 'server/personal/templates/assets/'
 
 # Default primary key field type
