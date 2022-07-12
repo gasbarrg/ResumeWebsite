@@ -13,17 +13,20 @@
 <meta name="title" content="">
 <meta name="author" content="Gabe Gasbarre">
 <meta name="description" content="">
-</head>
-
-<body>
-<!-- Pixel JS -->
-<script src="{% static 'js/pixel.js' %}"></script>
-</body>
-
 <!-- Stylesheet -->
 <link type="text/css" href="{% static '/css/styles.css' %}" rel="stylesheet">
 <!-- Fontawesome -->
 <link type="text/css" href="{% static '/vendor/@fortawesome/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+<!-- Pixel JS -->
+<script src="{% static 'js/pixel.js' %}"></script>
+</head>
+
+
+<body>
+
+</body>
+
+
 {% block content %}
     <main> 
         <div class="section-header bg-primary pb-5">
@@ -31,7 +34,7 @@
                 <div class="col-lg-8">
                     <img src="{% static '/img/pfp2.jpg' %}" class="rounded-circle img-thumbnail image-lg border-gray-300 p-1" alt="Profile Image">
                     <div class="mt-4 mb-5">
-                        <h1 class="display-2 fw-normal my-4">Hello, I’m Gabe Gasbarre</h1>
+                        <h1 class="display-2 fw-normal my-4">Test Title 1</h1>
                         <h5 class="fw-normal text-gray">Computer Engineering student at <span class="fw-bold text-dark">Grand Valley State University</span></h5>
                     </div>
                 </div>
@@ -44,78 +47,62 @@
                 </h3>
                 <div class="line"></div>
             </div>
-
-                    <div class = "items">
-                        <div class = "projet_box">
-                            <div>
-                                <div class="img_wrap" style= "background-image: url('../static/img/robotArm.jpg');">
-                                </div>
-                                <div class = "desc_box"> 
-                                    <div class="title">
-                                        Test Item
-                                    </div>
-                                    <div class="subtitle">
-                                        Example Subtitle
-                                    </div>
-                                    <div class="tags">
-                                        Sample tag info 
-                                    </div>
-                                </div>
-                            </div>
+            <div class = "items">
+                <div id = "project_box">
+                    <div class="img_wrap" style= "background-image: url('../../static/img/robotArm.jpg');"></div>
+                    <div class = "desc_box"> 
+                        <div class="title">
+                            Test Item 1
                         </div>
-                        <div class = "projet_box">
-                            <div>
-                                <div class="img_wrap" style= "background-image: url('../static/img/robotArm.jpg');">
-                                </div>
-                                <div class = "desc_box" > 
-                                    <div class="title">
-                                        Test Item # 2
-                                    </div>
-                                    <div class="subtitle">
-                                        Example Subtitle
-                                    </div>
-                                    <div class="tags">
-                                        Sample tag info 
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="subtitle">
+                            Example Subtitle
                         </div>
-                        <div class = "projet_box">
-                            <div>
-                                <div class="img_wrap" style= "background-image: url('../static/img/robotArm.jpg');">
-                                </div>
-                                <div class = "desc_box"> 
-                                    <div class="title">
-                                        Test Item # 3
-                                    </div>
-                                    <div class="subtitle">
-                                        Example Subtitle
-                                    </div>
-                                    <div class="tags">
-                                        Sample tag info 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class = "projet_box">
-                            <div>
-                                <div class="img_wrap" style= "background-image: url('../static/img/robotArm.jpg');">
-                                </div>
-                                <div class = "desc_box"> 
-                                    <div class="title">
-                                        Test Item # 4
-                                    </div>
-                                    <div class="subtitle">
-                                        Example Subtitle
-                                    </div>
-                                    <div class="tags">
-                                        Sample tag info 
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="tags">
+                            Sample tag info 
                         </div>
                     </div>
-            
+                </div>
+                <div id = "project_box">
+                    <div class="img_wrap" style= "background-image: url('../../static/img/robotArm.jpg');"></div>
+                    <div class = "desc_box"> 
+                        <div class="title">
+                            Test Item 2
+                        </div>
+                        <div class="subtitle">
+                            Example Subtitle
+                        </div>
+                        <div class="tags">
+                            Sample tag info 
+                        </div>
+                    </div>
+                </div> <div id = "project_box">
+                    <div class="img_wrap" style= "background-image: url('../../static/img/robotArm.jpg');"></div>
+                    <div class = "desc_box"> 
+                        <div class="title">
+                            Test Item 3
+                        </div>
+                        <div class="subtitle">
+                            Example Subtitle
+                        </div>
+                        <div class="tags">
+                            Sample tag info 
+                        </div>
+                    </div>
+                </div> <div id = "project_box">
+                    <div class="img_wrap" style= "background-image: url('../../static/img/robotArm.jpg');"></div>
+                    <div class = "desc_box"> 
+                        <div class="title">
+                            Test Item 4
+                        </div>
+                        <div class="subtitle">
+                            Example Subtitle
+                        </div>
+                        <div class="tags">
+                            Sample tag info 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     {% endblock content %}
